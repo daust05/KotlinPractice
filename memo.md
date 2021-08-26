@@ -1,6 +1,6 @@
 # Kotlin 관련 메모
 ***
-마크다운 문서 참조: 
+마크다운 문서 참조:  
 [MARKDOWN1](https://gist.github.com/ihoneymon/652be052a0727ad59601)  
 [MARKDOWN2](https://heropy.blog/2017/09/30/markdown/)
 ***
