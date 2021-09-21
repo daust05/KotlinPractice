@@ -11,7 +11,7 @@
 var str:String = "hello world"
 str = "hello world!"
 ```
-### let  
+### val  
 * 한번 정의하면 재정의가 불가능한 타입 (java- final)
 ```
 val str:String = "hello world"
@@ -60,3 +60,15 @@ class Test{
   }
 }
 ```
+
+## 4. Unit, Nothing
+[참고](https://medium.com/@lunay0ung/kotlin-unit%EA%B3%BC-nothing-e3ff9143fd65)
+### Unit
+* 자바의 void와 비슷한 개념으로 사용되는 타입
+* 하지만 자바의 void와 다른 점도 존재한다.
+  + void: 반환값이 없음을 나타내는 특수타입
+  + unit: 싱글톤 unit 타입 객체를 반환
+### Nothing
+* 어떠한 값도 갖고 있지 않으면서 어떠한 값과도 호환되는 타입
+* 도달이 불가능한 코드의 위치를 나타내기위해 사용
+* null은 Nothing? 타입으로 나타낼 수 있다.
