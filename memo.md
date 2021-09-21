@@ -101,3 +101,4 @@ infix fun String.to(s:String) = Pair(this,s)
 # 그 외 쓸모있는 메모
 ## 1. 정규표현식
 [참고](https://wormwlrm.github.io/2020/07/19/Regular-Expressions-Tutorial.html)
+* """ 삼중 따움표를 사용하면 escape를 사용하지 않아도 된다.
