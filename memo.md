@@ -72,3 +72,24 @@ class Test{
 * 어떠한 값도 갖고 있지 않으면서 어떠한 값과도 호환되는 타입
 * 도달이 불가능한 코드의 위치를 나타내기위해 사용
 * null은 Nothing? 타입으로 나타낼 수 있다.
+
+## 5. Infix Function  
+* 가독성 향상을 위해
+### 예시
+```
+val pair = "Ferrari" to "Katrina"
+// val pair = Pair("Ferrari,"Katrina")
+
+```
+### 구현
+```
+infix fun [Dispatcher Type].[fun Name]([receiver]):[return type]{
+  // this: Dispatcher
+  return ***
+}
+infix fun String.to(s:String):String{
+  return Pair(this,s)
+}
+// inline version
+infix fun String.to(s:String) = Pair(this,s)
+```
