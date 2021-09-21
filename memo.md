@@ -18,7 +18,7 @@ val str:String = "hello world"
 // 컴파일 오류
 // str = "hello world!"
 ```
-
+***
 ## 2. Nullable
 |사용법|설명|
 |:---|:---------|
@@ -27,7 +27,7 @@ val str:String = "hello world"
 | [variable]?.[method]|nullable인 변수가 null일 경우 null 반환 / 아닐경우 method 실행|
 | [variable]!!.[method]|nullable인 변수를 not null로 변환하여 method실행|
 | [variable]?:[variable]|null이 아닐경우 전자 null 일경우 후자를 선택|
-
+***
 ## 3. Lazy Initialization
 ### lateinit
 * not null type을 사용하면서 나중에 초기화할수 있도록 허용해준다.  
@@ -60,7 +60,7 @@ class Test{
   }
 }
 ```
-
+***
 ## 4. Unit, Nothing
 [참고](https://medium.com/@lunay0ung/kotlin-unit%EA%B3%BC-nothing-e3ff9143fd65)
 ### Unit
@@ -72,7 +72,7 @@ class Test{
 * 어떠한 값도 갖고 있지 않으면서 어떠한 값과도 호환되는 타입
 * 도달이 불가능한 코드의 위치를 나타내기위해 사용
 * null은 Nothing? 타입으로 나타낼 수 있다.
-
+***
 ## 5. Infix Function  
 * 가독성 향상을 위해 사용  
 
@@ -97,3 +97,4 @@ infix fun String.to(s:String):String{
 // inline version
 infix fun String.to(s:String) = Pair(this,s)
 ```
+***
