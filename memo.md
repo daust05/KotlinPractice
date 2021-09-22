@@ -98,6 +98,10 @@ infix fun String.to(s:String):String{
 infix fun String.to(s:String) = Pair(this,s)
 ```
 ***
+## 6. Variance
+[참조](https://medium.com/mj-studio/%EC%BD%94%ED%8B%80%EB%A6%B0-%EC%A0%9C%EB%84%A4%EB%A6%AD-in-out-3b809869610e)
+* 너무 어려워서 나중에 정리
+***
 # 그 외 쓸모있는 메모
 ## 1. 정규표현식
 [참고](https://wormwlrm.github.io/2020/07/19/Regular-Expressions-Tutorial.html)
