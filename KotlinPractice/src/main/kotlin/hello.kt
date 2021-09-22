@@ -1,25 +1,11 @@
-class NullCheck(s:String?){
-    var isNull:String? = s
+import practice.Hello
+import practice.Infix
+import practice.NullCheck
+import practice.Print
 
-    fun getString(ins:String?):String{
-        return ins?:"is null"
-    }
-
-    fun getLength(ins:String?):Int?{
-        return ins?.length
-    }
-
-    fun transNull(ins:String?){
-        var notNull:String? = ins
-        println(ins?.length)
-        notNull = ins!!
-        println(ins.length)
-    }
-
-}
 
 fun main(args:Array<String>){
+    val test = Infix()
 
-    var nullCheck = NullCheck(null)
-    nullCheck.transNull("I'm not null")
+    test.start()
 }
