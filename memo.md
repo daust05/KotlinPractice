@@ -77,12 +77,12 @@ class Test{
 * 가독성 향상을 위해 사용  
 
 ### 예시
-```
+```kotlin
 val pair = "Ferrari" to "Katrina"
 // val pair = Pair("Ferrari,"Katrina")
 ```
 ### 구현
-```
+```kotlin
 // 함수 형식
 infix fun [Dispatcher Type].[fun Name]([receiver]):[return type]{
   // this: Dispatcher
@@ -104,7 +104,7 @@ infix fun String.to(s:String) = Pair(this,s)
 ***
 ## 7. Let / Also / Apply / With / Run
 [참조](https://medium.com/@limgyumin/%EC%BD%94%ED%8B%80%EB%A6%B0-%EC%9D%98-apply-with-let-also-run-%EC%9D%80-%EC%96%B8%EC%A0%9C-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94%EA%B0%80-4a517292df29)
-* let
+### let
   + 지정된 값이 null 이 아닌 경우에 코드를 실행해야 하는 경우 / Nullable 객체를 다른 Nullable 객체로 변환하는 경우 / 단일 지역 변수의 범위를 제한 하는 경우
 ```kotlin
 val t: R = T.let{
@@ -112,7 +112,7 @@ val t: R = T.let{
   it.toR()
 }
 ```
-* also
+### also
   + 수신 객체 람다가 전달된 수신 객체를 전혀 사용 하지 않거나 수신 객체의 속성을 변경하지 않고 사용하는 경우
   + 예시: 사이드 이팩트를 확인, 유효성 검사
 ```kotlin
@@ -120,7 +120,7 @@ val t: T = T.also{
   println(it)
 }
 ```  
-* apply
+### apply
   + 수신 객체 람다 내부에서 수신 객체의 함수를 사용하지 않고 수신 객체 자신을 다시 반환 하려는 경우에 apply 를 사용
   + 예시: 객체의 초기화
 ```kotlin
@@ -128,7 +128,7 @@ val t: T = T.apply{
   println(this)
 }
 ```
-* with
+### with
   + Non-nullable (Null 이 될수 없는) 수신 객체 이고 결과가 필요하지 않은 경우
 ```kotlin
 T.name
@@ -138,7 +138,7 @@ with(T){
   print(age)
 }
 ```
-* run
+### run
   + 어떤 값을 계산할 필요가 있거나 여러개의 지역 변수의 범위를 제한
 ```kotlin
 val t:R = T.run{
